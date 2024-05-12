@@ -11,12 +11,13 @@ current_time=$(date +"%H:%M:%S")
 DHT_PIN=4
 
 # Read the temperature and humidity from the DHT22 sensor
-data=$(sudo /usr/bin/python3 -c "import Adafruit_DHT; print(Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, $DHT_PIN))")
+#data=$(sudo /usr/bin/python3 -c "import Adafruit_DHT; print(Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, $DHT_PIN))")
+data=$(sudo /usr/bin/python3 -c "import Adafruit_DHT; print(Adafruit_DHT.read_retry(Adafruit_DHT.AM2302, $DHT_PIN))")
 
 #echo "data: $data"
 
-temp=$(echo "$data" | sed 's/.*(\([^,]*\),.*/\1/')
-hum=$(echo "$data" | sed 's/.*, \(.*\))/\1/')
+hum=$(echo "$data" | sed 's/.*(\([^,]*\),.*/\1/')
+temp=$(echo "$data" | sed 's/.*, \(.*\))/\1/')
 
 # Print the extracted values
 #echo "Temperature: $temp"
