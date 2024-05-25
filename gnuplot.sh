@@ -31,7 +31,7 @@ set timefmt "%H:%M:%S"
 set format x "%H:%M"
 
 set yrange [18:25]
-set y2range [40:70]
+set y2range [20:70]
 
 set ytics nomirror
 set y2tics
