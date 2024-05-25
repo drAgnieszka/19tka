@@ -1,7 +1,7 @@
 # 19tka
 Script description
 
-### measure_temp.sh
+### measure_temp_hum.sh
 
 Script save humidity and temperature values to file csv located in data folder on daily basis - controled by cron (more detail on cron paragraph)
 The file structure is like below     
