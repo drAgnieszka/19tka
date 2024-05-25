@@ -20,7 +20,7 @@ Script generate plot in png format stored in folder plot from data from day befo
 ### crontab
 Crontab is set in cronjobs.txt file that is updated each 10 minutes
 
-### requirments
+### requirements
 #### wiring pi
 ```bash
 git clone https://github.com/WiringPi/WiringPi.git
