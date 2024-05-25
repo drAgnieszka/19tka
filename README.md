@@ -18,6 +18,6 @@ Script is updateing cron jobs according to settings provided in cronjobs.txt fil
 Script generate plot in png format stored in folder plot from data from day before. It is triggered once after midnight
 
 ### crontab
-Crontab is set in cronjobs.txt file that is update each 10 minutes
+Crontab is set in cronjobs.txt file that is updated each 10 minutes
 
 Not very smart but working good enough :)
