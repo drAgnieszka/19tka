@@ -1,0 +1,3 @@
+* * * * * cd /home/buddy/github && ./measure_temp_hum.sh
+*/10 * * * * cd /home/buddy/github && git pull && git add 2024* && git commit -m "update measurments" && git push >/dev/null 2>&1
+*/10 * * * * cd /home/buddy/github && update_cron.sh
