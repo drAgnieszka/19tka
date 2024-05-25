@@ -1,6 +1,9 @@
 # 19tka
+Script description
 
-Script measure_temp_hum.sh save humidity and temperature values to file csv on daily basis
+### measure_temp.sh
+
+Script save humidity and temperature values to file csv located in data folder on daily basis - controled by cron (more detail on cron paragraph)
 The file structure is like below     
 ```
 date,time,temperature,humidity
@@ -8,10 +11,13 @@ date,time,temperature,humidity
 2024-05-13,00:13:01,25.399999618530273,21.899999618530273
 ```
 
-The file is triggered by cron with comands like below
-```
-* * * * * cd /home/buddy/github && ./measure_temp_hum.sh
-*/10 * * * * cd /home/buddy/github && git add 2024* && git commit -m "update measurments" && git push >/dev/null 2>&1
-```
+### update_cron.sh
+Script is updateing cron jobs according to settings provided in cronjobs.txt file
+
+### gnuplot.sh
+Script generate plot in png format stored in folder plot from data from day before. It is triggered once after midnight
+
+### crontab
+Crontab is set in cronjobs.txt file that is update each 10 minutes
 
 Not very smart but working good enough :)
