@@ -2,4 +2,4 @@
 */10 * * * * cd /home/buddy/github && git pull && git add data/202* && git commit -m "update measurments" && git push >/dev/null 2>&1
 */10 * * * * cd /home/buddy/github && ./update_cron.sh
 5 0 * * * /home/buddy/github/gnuplot.sh
-10 0 * * * cd /home/buddy/github && git add plot/* && git commit -m "add plot"
+10 0 * * * cd /home/buddy/github && git add plot/* && git commit -m "add plot" && git push >/dev/null 2>&1
