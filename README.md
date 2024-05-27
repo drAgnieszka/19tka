@@ -20,6 +20,9 @@ Script generate plot in png format stored in folder plot from data from day befo
 ### crontab
 Crontab is set in cronjobs.txt file that is updated each 10 minutes
 
+### plot_graph.sh
+Script for manual plot - input parameter is scv file - as ouutput will generate png file to working directory
+
 ### requirements
 #### wiring pi
 ```bash
